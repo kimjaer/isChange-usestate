@@ -1,17 +1,22 @@
-// import { useState } from 'react';
-// import './jjr.css';
+import { Route, Routes, Link } from 'react-router-dom';
+import Kornavi from './child/first';
+import Ennavi from './child/snd'
+import './jjr.css';
 
-// function App() {
-//   const [isChange, updatechange] = useState(false)
-//   return (
-//     <div className='App'>
-//       <h1>{!isChange ? "Bye Bye 2023~!" : "Welcome 2024!"}</h1>
-//       {
-        
-//       <button onClick={() => { updatechange(!isChange) }}>click!</button>
-//       }
-//       </div>
-//   );
-// }
+function App() {
+  return (
+    <div className='App'>
 
-// export default App;
+      <div>
+        <Link to="/kr">한국어</Link>
+        <Link to="/en">English</Link>
+      </div>
+      <Routes>
+        <Route path='/kr' element={<Kornavi></Kornavi>}></Route>
+        <Route path='/en' element={<Ennavi></Ennavi>}></Route>
+      </Routes>
+    </div>
+  );
+}
+
+export default App;

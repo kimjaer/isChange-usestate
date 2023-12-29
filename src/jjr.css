@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: blueviolet;
+  background-color: rgb(196, 166, 224);
 }
 
 .App h1 {
@@ -27,6 +27,7 @@ body {
   color: pink;
   font-size: 4vw;
 }
+
 .blackmode button:after{
   content: "BLACK";
 }
@@ -43,4 +44,7 @@ body {
   border: 1px solid white;
   font-size: 4vw;
   color: rgb(255, 255, 255);
+}
+.App p {
+  color: rgb(59, 59, 245);
 }
