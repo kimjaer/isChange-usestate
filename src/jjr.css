@@ -16,3 +16,31 @@ body {
 .App h1 {
   font-size: 4rem;
 }
+
+.blackmode{
+  background-color: black;
+  transition: 0.5s;
+}
+.blackmode button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: pink;
+  font-size: 4vw;
+}
+.blackmode button:after{
+  content: "BLACK";
+}
+.skybluemode button:after {
+  content: "SKYBLUE";
+}
+.skybluemode {
+  background-color: skyblue;
+  
+}
+
+.skybluemode button {
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 4vw;
+  color: rgb(255, 255, 255);
+}
